@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip: Preventing Duplicate Names — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Implementing Survey in Qualtrics — Tip</div>
+    <h1 class="page-title">Tip: Preventing Respondents from Listing the Same Person Multiple Times</h1>
+  </div>
+
+  <!-- Screenshot 40 -->
+  <div class="figure-block">
+    <img src="images/tip1.png" alt="Screenshot: Custom validation panel in Qualtrics for the IM name generator question" />
+    <p class="figure-caption">Setting up custom validation on the IM name generator to prevent duplicate entries</p>
+  </div>
+
+  <p>The survey prompts say, "enter names that you have not listed before," but there could be cases in which respondents list duplicate names. In order to prevent this, we can set up a validation logic that only allows unique answers for each name generator field.</p>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Go back to the IM generator question, and toggle "<a href="https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/validation/" target="_blank" rel="noopener">Add validation</a>" on the left.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Click "Custom validation."</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Set up the validation logic for the IM generator (<code>Q1_NG_IM1</code>).</h3>
+    </div>
+    <div class="step-content">
+      <p>The purpose of this validation function is to make sure the value of every field in this generator is either (a) empty or (b) is not equal to other fields available in the generator. Therefore, the logic should look as follows:</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Logic level 1<br>(between logic)</th>
+              <th>Logic level 2<br>(within logic)</th>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Field Name</th>
+              <th>Condition Type</th>
+              <th>Condition Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/2}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/3}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/4}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td colspan="7" style="text-align:center; color:#777; font-style:italic; padding:0.4rem;">… (continued for all field pairs) …</td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>8</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/9}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>8</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>8</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/10}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>8</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>9</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/10}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q1_NG_IM1</code></td><td>9</td><td>Is Empty</td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">4</span>
+      <h3>Go to the AC name generator (<code>Q2_NG_AC1</code>). Set up validation logic there as well.</h3>
+    </div>
+    <div class="step-content">
+      <p>Here, we want to make sure the value of every field in this generator is either (a) empty or (b) is not equal to other fields available in the generator and (c) is not equal to other fields available in the previous generator (<code>Q1_NG_IM1</code>). Therefore, the logic should look as follows:</p>
+
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Logic level 1<br>(between logic)</th>
+              <th>Logic level 2<br>(within logic)</th>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Field Name</th>
+              <th>Condition Type</th>
+              <th>Condition Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID2/ChoiceTextEntryValue/2}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID2/ChoiceTextEntryValue/3}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td colspan="7" style="text-align:center; color:#777; font-style:italic; padding:0.4rem;">… (continued for all AC-to-AC field pairs) …</td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>9</td><td>Is Not Equal to</td><td><code>${q://QID2/ChoiceTextEntryValue/10}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>9</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/1}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/2}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td colspan="7" style="text-align:center; color:#777; font-style:italic; padding:0.4rem;">… (continued for all AC-to-IM field pairs) …</td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/10}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>1</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>2</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/1}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>2</td><td>Is Empty</td><td></td>
+            </tr>
+            <tr>
+              <td colspan="7" style="text-align:center; color:#777; font-style:italic; padding:0.4rem;">… (continued for all remaining AC field × IM field pairs) …</td>
+            </tr>
+            <tr>
+              <td>And</td><td></td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>10</td><td>Is Not Equal to</td><td><code>${q://QID1/ChoiceTextEntryValue/10}</code></td>
+            </tr>
+            <tr>
+              <td></td><td>Or</td><td>Question</td><td><code>Q2_NG_AC1</code></td><td>10</td><td>Is Empty</td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-step7.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 7: Network Density Questions</span>
+    </a>
+    <a class="next" href="r-step1.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Data Cleaning Step 1: Download &amp; Prepare Data</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

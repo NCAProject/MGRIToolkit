@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 5: Random Subset / Sample List — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Implementing Survey in Qualtrics</div>
+    <h1 class="page-title">Step 5: Creating a Random Subset of the Listed Names ("Sample List," <code>Q6_Random</code>)</h1>
+  </div>
+
+  <p>Next, we are going to create a function that randomly samples names from the name lists and presents the <strong>sample list</strong> to respondents. In the following steps, I will refer to this as a "sample list" or by its variable name, <strong><code>Q6_Random</code></strong>.</p>
+
+  <!-- Screenshot 25 -->
+  <div class="figure-block">
+    <img src="images/Slide26.png" alt="Screenshot: Q6_Random question — Multiple Choice type, 20 choices, each piped from name generators" />
+    <p class="figure-caption"><code>Q6_Random</code> — multiple choice question for displaying the random sample list</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Create a question in the "Name Interpreters" block and set the question type as "Multiple Choice."</h3>
+    </div>
+    <div class="step-content">
+      <p>(This is not a question for collecting data — this is only for showing the randomly sampled names to the respondents.)</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Set the number of choices to <strong>20</strong>.</h3>
+    </div>
+    <div class="step-content">
+      <p>This is 20 here because the total number of available fields in the IM and AC generators was 20. You can adjust this as you increase or decrease the number of available fields in the name generators.</p>
+    </div>
+  </div>
+
+  <div class="step-block" id="step5-3">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Insert choice texts so that each choice matches with each field available in the name generators. Then, set up the choice display logic so the question shows only the field that has names in it.</h3>
+    </div>
+    <div class="step-content">
+      <p>(See below or review <a href="qualtrics-step3.html#inserting-choice-text">Step 3-(5)</a> for directions.)</p>
+    </div>
+  </div>
+
+  <!-- Screenshot 26 -->
+  <div class="figure-block">
+    <img src="images/Slide27.png" alt="Screenshot: Inserting piped text from Q1_NG_IM1 into choice options of Q6_Random" />
+    <p class="figure-caption">Inserting piped text from the IM generator into <code>Q6_Random</code> choices</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(3)-1</span>
+      <h3>Click "Insert Piped Text" &gt; "Survey Question" &gt; the IM generator question (<code>Q1_NG_IM1</code>) &gt; and each form field of the generator.</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 27 -->
+  <div class="figure-block">
+    <img src="images/Slide28.png" alt="Screenshot: Add Display Logic option for a choice in Q6_Random" />
+    <p class="figure-caption">Opening "Add Display Logic" for each choice</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(3)-2</span>
+      <h3>Click "Add Display Logic…"</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 28 -->
+  <div class="figure-block">
+    <img src="images/Slide29.png" alt="Screenshot: Choice display logic for Q6_Random — conditions referencing both Q1_NG_IM1 and Q2_NG_AC1" />
+    <p class="figure-caption">Choice display logic for <code>Q6_Random</code> referencing both name generators</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(3)-3</span>
+      <h3>Set the choice display logic. Each choice should embed either of the following formats:</h3>
+    </div>
+    <div class="step-content sub">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Field Name</th>
+              <th>Condition Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Question</td>
+              <td><code>Q1_NG_IM1</code> (QID1)</td>
+              <td>1, 2, 3, … K</td>
+              <td>Is Not Empty</td>
+            </tr>
+            <tr>
+              <td>Question</td>
+              <td><code>Q2_NG_AC1</code> (QID2)</td>
+              <td>1, 2, 3, … K</td>
+              <td>Is Not Empty</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>"Name" and number K should match the field location identified in the piped text of each choice option (<code>${q://<strong>QID1</strong>/ChoiceTextEntryValue/<strong>K</strong>}</code>). Set up choice display logic for all choices in the question.</p>
+    </div>
+  </div>
+
+  <div class="callout faq">
+    <div class="callout-title">FAQ: How do I find question ID (QID) in my survey?</div>
+    <p>QID matches the number that appears as a question name when you make a new question (e.g., "Q6" → QID6). If you deleted the question name and don't remember the number, you can <a href="https://www.qualtrics.com/support/survey-platform/data-and-analysis-module/data/download-data/export-data-overview/" target="_blank" rel="noopener">export the survey data</a> as a CSV file, and the third row holds the QID information.</p>
+  </div>
+
+  <!-- Screenshot 29 -->
+  <div class="figure-block">
+    <img src="images/Slide30.png" alt="Screenshot: Choice Randomization panel — 'Present only __ of total choices' option set to 6" />
+    <p class="figure-caption">Enabling choice randomization to present only 6 of the total choices</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">4</span>
+      <h3>Click "<a href="https://www.qualtrics.com/support/survey-platform/survey-module/question-options/choice-randomization/" target="_blank" rel="noopener">Choice randomization</a>" on the left menu.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">5</span>
+      <h3>Click "Present only __ of total choices." Set the number of names that need to be sampled for the interpreters.</h3>
+    </div>
+    <div class="step-content">
+      <p>See <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10022747/" target="_blank" rel="noopener">Peng, Roth, and Perry (2023)</a> for a discussion on how to decide the number of randomly selected names. In this sample survey, I set the number as <strong>6</strong>.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-step4.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 4: Survey Proceeding Logic</span>
+    </a>
+    <a class="next" href="qualtrics-step6.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Step 6: Name Interpreters</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 6: Name Interpreters — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Implementing Survey in Qualtrics</div>
+    <h1 class="page-title">Step 6: Creating Name Interpreters for the Sample List</h1>
+    <p class="page-subtitle">Creating <code>Q7_NI_relationship</code> and <code>Q8_NI_gender</code></p>
+  </div>
+
+  <!-- Screenshot 30 -->
+  <div class="figure-block">
+    <img src="images/Slide31.png" alt="Screenshot: Matrix table name interpreter question — Q7_NI_relationship with 20 statements" />
+    <p class="figure-caption">Name interpreter question (<code>Q7_NI_relationship</code>) — Matrix table setup</p>
+  </div>
+
+  <p>Now that we've created the function for generating a sample list, we're going to make <strong>name interpreters</strong> (follow-up questions on each sampled alter). In this sample survey, there are only two name interpreters (Relationship Type, Gender Identity). Of course, you can change this part to be aligned with your research objectives. See <span class="placeholder">[cite]</span> for reviewing name interpreters used in previous studies.</p>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Create a question and set the question as "<a href="https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/question-types-guide/standard-content/matrix-table/?parent=p001132" target="_blank" rel="noopener">Matrix table</a>."</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Set up the number of statements as <strong>20</strong>.</h3>
+    </div>
+    <div class="step-content">
+      <p>Again, this number should be equal to the total number of available fields (boxes) in the name generators.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Set up the number of scale points.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">4</span>
+      <h3>Write the prompt and scale point options.</h3>
+    </div>
+    <div class="step-content">
+      <p>This sample question asks respondents to select types of relationships with each alter.</p>
+    </div>
+  </div>
+
+  <div class="step-block" id="step6-5">
+    <div class="step-heading">
+      <span class="step-badge">5</span>
+      <h3>Insert choice text to be each available field in the name generator (See <a href="qualtrics-step3.html#inserting-choice-text">Step 3-(5)</a> or <a href="qualtrics-step5.html#step5-3">Step 5-(3)-1</a>) and set up the choice display logic.</h3>
+    </div>
+    <div class="step-content">
+      <div class="callout important">
+        <div class="callout-title">Important</div>
+        This logic is different from that of previous questions — see below.
+      </div>
+    </div>
+  </div>
+
+  <!-- Screenshot 31 -->
+  <div class="figure-block">
+    <img src="images/Slide32.png" alt="Screenshot: Add Display Logic option for a statement row in the name interpreter matrix" />
+    <p class="figure-caption">Opening "Add Display Logic" for a statement row in the name interpreter</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-1</span>
+      <h3>Click "Add Display Logic…"</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 32 -->
+  <div class="figure-block">
+    <img src="images/Slide33.png" alt="Screenshot: Display logic for name interpreter — referencing Q6_Random choice K 'Is Displayed'" />
+    <p class="figure-caption">Display logic for the name interpreter — referencing <code>Q6_Random</code> with "Is Displayed" condition</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-2</span>
+      <h3>Set up the display logic to refer to (1) the randomizer question (here, <code>Q6_Random</code>), (2) each available choice in the random sampling question, and set the condition to be <strong>"Is Displayed."</strong></h3>
+    </div>
+    <div class="step-content sub">
+      <p>This way, only the names displayed in the randomizer (in other words, names randomly sampled in the randomizer question) will be displayed in the name interpreters. Apply this logic to all the available choices in the interpreter questions.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-step5.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 5: Random Subset / Sample List</span>
+    </a>
+    <a class="next" href="qualtrics-step7.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Step 7: Network Density Questions</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

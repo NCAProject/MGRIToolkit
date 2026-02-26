@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 3: List Overlap Measure — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Implementing Survey in Qualtrics</div>
+    <h1 class="page-title">Step 3: Creating the List Overlap Measure</h1>
+    <p class="page-subtitle">Creating <code>Q3_IM_AC_select</code></p>
+  </div>
+
+  <div class="figure-block">
+    <img src="images/Slide16.png" alt="Screenshot: Q3_IM_AC_select question overview — multiple choice, 10 choices, display logic" />
+    <p class="figure-caption">List overlap measure question (<code>Q3_IM_AC_select</code>) overview</p>
+  </div>
+
+  <p>This question shows names listed in the IM generator and asks respondents to select the names of those who they would also list in AC.</p>
+
+  <!-- Step 1 -->
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Create a question <strong>between the IM generator and the AC generator questions</strong>, and set the question type as "<a href="https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/question-types-guide/standard-content/multiple-choice/?parent=p001132" target="_blank" rel="noopener">Multiple Choice</a>."</h3>
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Click "Allow multiple answers."</h3>
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Set the number of choices to <strong>10</strong>.</h3>
+    </div>
+    <div class="step-content">
+      <p>This is because the number of available fields in the IM generator was 10. Match the number of choices with the number of fields in the name generator you're referencing.</p>
+    </div>
+  </div>
+
+  <!-- Step 4 -->
+  <div class="step-block" id="step3-4">
+    <div class="step-heading">
+      <span class="step-badge">4</span>
+      <h3>Set up question display logic (see below).</h3>
+    </div>
+    <div class="step-content">
+      <p>This logic lets respondents who didn't list any names in the IM generator skip this question.</p>
+    </div>
+  </div>
+
+  <!-- Step 5 -->
+  <div class="step-block" id="step3-5">
+    <div class="step-heading">
+      <span class="step-badge">5</span>
+      <h3>Insert choice text and set up choice display logic (see below).</h3>
+    </div>
+    <div class="step-content">
+      <p>This logic lets respondents see the names they listed in the IM generator.</p>
+    </div>
+  </div>
+
+  <!-- Screenshot 17 — display logic UI -->
+  <div class="figure-block">
+    <img src="images/Slide17.png" alt="Screenshot: Display logic panel for Q3_IM_AC_select" />
+    <p class="figure-caption">Setting up question display logic for <code>Q3_IM_AC_select</code></p>
+  </div>
+
+  <h2 id="q-display-logic">Setting Up Question Display Logic — Step (4)</h2>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(4)-1</span>
+      <h3>Click "<a href="https://www.qualtrics.com/support/survey-platform/survey-module/question-options/display-logic/?parent=p0073" target="_blank" rel="noopener">Display logic</a>" on the left.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(4)-2</span>
+      <h3>Set up the display logic with the following condition:</h3>
+    </div>
+    <div class="step-content sub">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Logic</th>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Field Name</th>
+              <th>Condition Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Or</td>
+              <td>Question</td>
+              <td><code>Q1_NG_IM1</code></td>
+              <td>1, 2, 3, … K</td>
+              <td>Is Not Empty</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>K is the number of fields available in the IM generator. Because there were 10 fields available in the IM generator in this sample survey, I made 10 conditions here, from 1 to 10. This logic means this question will be shown only if a respondent fills out any of the fields available in the IM generator. Respondents who do not list any names in the IM generator will not see this question.</p>
+    </div>
+  </div>
+
+  <!-- Screenshot 18 — choice display logic -->
+  <div class="figure-block">
+    <img src="images/Slide18.png" alt="Screenshot: Choice display logic setup showing downward arrow and Insert Piped Text options" />
+    <p class="figure-caption">Inserting piped text into choice options</p>
+  </div>
+
+  <h2 id="inserting-choice-text">Inserting Choice Text (Piped Text) and Setting Up Choice Display Logic — Step (5)</h2>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-1</span>
+      <h3>Click the downward arrow button (highlighted).</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-2</span>
+      <h3>Click "Insert Piped Text" &gt; "Survey Question" &gt; the IM generator question (<code>Q1_NG_IM1</code>) &gt; and each form field of the generator.</h3>
+    </div>
+    <div class="step-content sub">
+      <p>This will fill the choice with a script that looks like this: <code>${q://QID1/ChoiceTextEntryValue/1}</code>. This script retrieves the values that were provided by respondents in the previous questions. <strong>QID</strong> means the Qualtrics question ID. Because the IM generator question's question ID was 1, it should be "QID1." <strong>ChoiceTextEntryValue</strong> means the text value provided by respondents (in QID1). <strong>1</strong> means the location of the field where the value was provided.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-3</span>
+      <h3>Fill out other choice options.</h3>
+    </div>
+    <div class="step-content sub">
+      <p>The choices for this question should be:</p>
+      <pre><code class="language-text">${q://QID1/ChoiceTextEntryValue/1}
+${q://QID1/ChoiceTextEntryValue/2}
+...
+${q://QID1/ChoiceTextEntryValue/10}</code></pre>
+    </div>
+  </div>
+
+  <!-- Screenshots 19–20 — choice display logic -->
+  <div class="figure-block">
+    <img src="images/Slide19.png" alt="Screenshot: Choice options with downward arrow button highlighted to open display logic" />
+    <p class="figure-caption">Opening choice display logic via the downward arrow button</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-4</span>
+      <h3>Click the downward arrow button (highlighted).</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-5</span>
+      <h3>Click "Add Display Logic…"</h3>
+    </div>
+  </div>
+
+  <div class="figure-block">
+    <img src="images/Slide20.png" alt="Screenshot: Choice display logic dialog — IM Generator field K Is Not Empty condition" />
+    <p class="figure-caption">Choice display logic: show choice only when the corresponding IM field is not empty</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(5)-6</span>
+      <h3>Set the choice display logic to be: "IM Generator Question field (box) K <strong>Is Not Empty</strong>."</h3>
+    </div>
+    <div class="step-content sub">
+      <p>K should match the field location identified in the piped text in each choice option (<code>${q://QID1/ChoiceTextEntryValue/<strong>K</strong>}</code>). Set up choice display logic for all choices in the question.</p>
+      <p>Now we have completed the name generators.</p>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-step2.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 2: Creating Name Generators</span>
+    </a>
+    <a class="next" href="qualtrics-step4.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Step 4: Survey Proceeding Logic</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

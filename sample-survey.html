@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Survey — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Getting Started</div>
+    <h1 class="page-title">Sample Survey</h1>
+    <p class="page-subtitle">Before we start, let's take a look at what a survey using MGRI looks like. The following are screenshots from the sample survey — you can download the sample file as a Qualtrics survey from the <a href="how-to-use.html#download">toolkit</a>.</p>
+  </div>
+
+  <!-- Screenshot 1 -->
+  <div class="figure-block">
+    <img src="images/Slide1.png" alt="Screenshot 1: First name generator — Important Matters" />
+    <p class="figure-caption">Screenshot 1: First name generator (Important Matters)</p>
+  </div>
+  <p><span class="fig-ref">①</span> This is the first of the two sample <strong>name generators</strong> in the survey. Here, respondents are asked to list names of people with whom they have discussed matters important to them (I will call this name generator "Important Matters" or "IM").</p>
+
+  <!-- Screenshot 2 -->
+  <div class="figure-block">
+    <img src="images/Slide2.png" alt="Screenshot 2: List overlap question — Academic & Career Matters selection" />
+    <p class="figure-caption">Screenshot 2: List overlap measure — selecting Academic &amp; Career Matters names</p>
+  </div>
+  <p><span class="fig-ref">②</span> Respondents are asked to select the names (from the list they generated), of people with whom they have discussed academic or career matters (I will call this "Academic &amp; Career Matters" or "AC").</p>
+
+  <!-- Screenshot 3 -->
+  <div class="figure-block">
+    <img src="images/Slide3.png" alt="Screenshot 3: Second name generator — Academic & Career Matters" />
+    <p class="figure-caption">Screenshot 3: Second name generator (Academic &amp; Career Matters)</p>
+  </div>
+  <p><span class="fig-ref">③</span> This is the second <strong>name generator</strong>. Here, respondents are asked to list the names of people with whom they have discussed academic or career matters, aside from those they listed in the previous section.</p>
+
+  <!-- Screenshot 4 -->
+  <div class="figure-block">
+    <img src="images/Slide4.png" alt="Screenshot 4: Sample list — six randomly sampled names displayed" />
+    <p class="figure-caption">Screenshot 4: Randomly sampled names shown to respondent (sample list)</p>
+  </div>
+  <p><span class="fig-ref">④</span> On this page, the survey shows <strong>six randomly sampled names</strong> from the name lists, which will be used for <strong>name interpreters</strong> on the subsequent pages. I will call this list of randomly sampled names a "sample list." If respondents did not list more than six names, this page will show all names listed in the previous section. If respondents did not list any names, they will be led to the end of the survey.</p>
+
+  <!-- Screenshot 5 -->
+  <div class="figure-block">
+    <img src="images/Slide5.png" alt="Screenshot 5: First name interpreter — relationship type" />
+    <p class="figure-caption">Screenshot 5: First name interpreter — relationship type</p>
+  </div>
+  <p><span class="fig-ref">⑤</span> This is the first of two sample <strong>name interpreters.</strong> This question asks respondents to identify their relationships with each person in the sample list.</p>
+
+  <!-- Screenshot 6 -->
+  <div class="figure-block">
+    <img src="images/Slide6.png" alt="Screenshot 6: Second name interpreter — gender identity" />
+    <p class="figure-caption">Screenshot 6: Second name interpreter — gender identity</p>
+  </div>
+  <p><span class="fig-ref">⑥</span> This is the second <strong>name interpreter</strong>, where respondents are asked to identify the gender of each person in the sample list.</p>
+
+  <!-- Screenshot 7 -->
+  <div class="figure-block">
+    <img src="images/Slide7.png" alt="Screenshot 7: First density question" />
+    <p class="figure-caption">Screenshot 7: First density / alter-alter tie question</p>
+  </div>
+  <p><span class="fig-ref">⑦</span> On the following pages, respondents are asked to identify whether each person in the sample list talks to or hangs out with the other people in the list independently of the respondents. Because we can calculate network density from this information, I will refer to these questions as "density questions." The following pages will show all density questions in the survey.</p>
+
+  <!-- Screenshots 8–12 (remaining density question screenshots) -->
+  <div class="figure-block">
+    <img src="images/Slide8.png" alt="Density question — alter 2" />
+    <p class="figure-caption">Density question — alter 2</p>
+  </div>
+
+  <div class="figure-block">
+    <img src="images/Slide9.png" alt="Density question — alter 3" />
+    <p class="figure-caption">Density question — alter 3</p>
+  </div>
+
+  <div class="figure-block">
+    <img src="images/Slide10.png" alt="Density question — alter 4" />
+    <p class="figure-caption">Density question — alter 4</p>
+  </div>
+
+  <div class="figure-block">
+    <img src="images/Slide11.png" alt="Density question — alter 5" />
+    <p class="figure-caption">Density question — alter 5</p>
+  </div>
+
+  <div class="figure-block">
+    <img src="images/Slide12.png" alt="Survey end" />
+    <p class="figure-caption">Survey end</p>
+  </div>
+
+  <p><span class="fig-ref">⑧</span> After completing the density questions, the survey is completed, and the response is recorded.</p>
+
+  <div class="callout tip">
+    <div class="callout-title">Next Step</div>
+    The following section will explain how to build this sample survey. Continue to <a href="qualtrics-step1.html">Step 1: Creating Survey Blocks</a>.
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="how-to-use.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">How to Use This Handbook</span>
+    </a>
+    <a class="next" href="qualtrics-step1.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Step 1: Creating Survey Blocks</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

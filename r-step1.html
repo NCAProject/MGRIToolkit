@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Cleaning Step 1: Download &amp; Prepare Data — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Data Cleaning in R</div>
+    <h1 class="page-title">Step 1: Download and Prepare the Data</h1>
+  </div>
+
+  <div class="callout note">
+    <div class="callout-title">Note</div>
+    This data-cleaning introduction is focused on generating datasets suitable for using the <a href="https://cran.r-project.org/web/packages/egor/index.html" target="_blank" rel="noopener">egor package in R</a>. Once you create an egor object, you can convert the object for other social network analysis packages such as "igraph."
+  </div>
+
+  <p>First, let's download the raw data from Qualtrics.</p>
+
+  <!-- Screenshot 41 -->
+  <div class="figure-block">
+    <img src="images/image41.png" alt="Screenshot: Qualtrics Data & Analysis tab — Export & Import > Export Data menu" />
+    <p class="figure-caption">Exporting data from Qualtrics — Data &amp; Analysis &gt; Export &amp; Import &gt; Export Data</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Go to the "Data &amp; Analysis" tab. Click "Export &amp; Import" &gt; "Export Data…"</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Click "More options."</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 42 -->
+  <div class="figure-block">
+    <img src="images/image42.png" alt="Screenshot: Export Data dialog — 'Export viewing order data for randomized surveys' checkbox highlighted" />
+    <p class="figure-caption">Enabling "Export viewing order data for randomized surveys" in the export options</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Check "Export viewing order data for randomized surveys."</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">4</span>
+      <h3>Click "Download" and download the CSV file.</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 43 -->
+  <div class="figure-block">
+    <img src="images/image43.png" alt="Screenshot: Opened CSV file with second and third rows highlighted for deletion" />
+    <p class="figure-caption">Deleting the second and third rows from the downloaded CSV before use</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">5</span>
+      <h3>Open the downloaded file, and <strong>delete the second and third rows</strong>. Save the file.</h3>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-tip.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Tip: Preventing Duplicate Names</span>
+    </a>
+    <a class="next" href="r-step2.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Step 2: Check &amp; Run the Cleaning Script</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

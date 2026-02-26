@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Use This Handbook — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Getting Started</div>
+    <h1 class="page-title">How to Use This Handbook</h1>
+  </div>
+
+  <p>This handbook will show you how to build a survey using the Multiple Generator Random Interpreter (MGRI) method in Qualtrics and how to clean the data collected from the survey. This handbook does not provide a conceptual introduction to MGRI. To learn what MGRI is and how it could benefit your study, please refer to <a href="https://doi.org/10.1177/1525822X06298588" target="_blank" rel="noopener">Marin &amp; Hampton (2007)</a>. Our <a href ="https://doi.org/10.31235/osf.io/vm9cx_v1" target = _blank>research brief</a> also provides information about using MGRI in online surveys.</p>
+
+  <h2>Requirements</h2>
+  <p>Please make sure you have access to Qualtrics and have R and R Studio installed.</p>
+  <p>You only need a free account to import and access the sample Qualtrics survey in this toolkit. Please refer to <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-tools/import-and-export-surveys/" target="_blank" rel="noopener">this page</a> to learn how to import a <code>.qsf</code> file into your Qualtrics account. <a href="https://cran.r-project.org/" target="_blank" rel="noopener">R</a> and <a href="https://posit.co/download/rstudio-desktop/" target="_blank" rel="noopener">R Studio</a> are free software.</p>
+  <p>This handbook assumes that you have basic understanding of Qualtrics and R. To learn more about how to use Qualtrics functions, please refer to <a href="https://www.qualtrics.com/support/survey-platform/managing-your-account/creating-account-logging/?parent=p001035" target="_blank" rel="noopener">this page</a>. To learn more about how to use R, please refer to <a href="https://www.geeksforgeeks.org/r-tutorial/" target="_blank" rel="noopener">this page</a> or other available resources.</p>
+
+  <h2>Download the Toolkit</h2>
+  <p>The toolkit includes four files: (1) this handbook, (2) sample survey (<code>.qsf</code> file), (3) sample dataset (<code>.csv</code> file), and (4) R script (<code>.R</code> file). You may download the toolkit here: <span class="placeholder">[insert link]</span></p>
+
+  <h2>Tips for Readers</h2>
+  <p>This handbook first shows key features of the sample survey and introduces how to build the sample survey. If you are new to Qualtrics, I recommend you import the sample survey into your Qualtrics account, and click each function mentioned in the introduction.</p>
+  <p>Subsequently, this handbook will provide an explanation of how to download the data, and how to clean the data with an R script. If you are new to R, please make sure you learn the basics first. This handbook provides a brief explanation of the R script and does not introduce the basic functions and concepts required to understand the whole script.</p>
+
+  <h2>Suggested Citation</h2>
+  <p>If you found this handbook and toolkit helpful for your research, please cite it using this recommended citation:</p>
+  <div class="callout note">
+    <div class="callout-title">Citation</div>
+    Jang-Tucci, K. (2023). <em>A Step-by-Step Guide for Implementing the Multiple Generator Random Interpreter (MGRI) in Online Surveys.</em> Center for Research on College-Workforce Transitions. University of Wisconsin–Madison.
+  </div>
+
+  <h2>Questions &amp; Feedback</h2>
+  <p>If you have questions or feedback about this handbook and toolkit (any suggestions to improve the toolkit are welcome!), please contact Kyoungjin Jang-Tucci at <a href="mailto:kjang26@wisc.edu">kjang26@wisc.edu</a>.</p>
+
+  <div class="page-nav">
+    <a class="prev" href="index.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Home</span>
+    </a>
+    <a class="next" href="sample-survey.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Sample Survey</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

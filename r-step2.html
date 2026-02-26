@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Cleaning Step 2: Run the Cleaning Script — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Data Cleaning in R</div>
+    <h1 class="page-title">Step 2: Check and Run the Data Cleaning Script</h1>
+  </div>
+
+  <p>Cleaning the raw data can be done by simply running an R script (attached in the Toolkit). Here, I will explain each part of the script so you can revise it to fit your own survey.</p>
+
+  <div class="callout faq">
+    <div class="callout-title">FAQ: What is an R script and how do I run it?</div>
+    <p>See <a href="https://www.geeksforgeeks.org/creation-and-execution-of-r-file-in-r-studio/" target="_blank" rel="noopener">this guide on creating and executing an R file in R Studio</a>.</p>
+  </div>
+
+  <!-- ── SECTION 1: Import data ── -->
+  <h2>Importing and Preparing Raw Data</h2>
+
+  <pre><code class="language-r">raw &lt;- read.csv('insert file path here')</code></pre>
+  <p>Import the raw data by using the <code>read.csv()</code> function.</p>
+
+  <pre><code class="language-r">raw &lt;- replace(raw, raw == '', NA)
+
+raw$ego_ID &lt;- 10000 + 1:nrow(raw)</code></pre>
+  <p>Replace all empty values with <code>NA</code> by using the <code>replace()</code> function.</p>
+  <p>Egor requires numeric IDs for egos and alters. Here, I assigned numeric ego IDs (<code>ego_ID</code>) from 10001 to 10000 + (response number) to each response.</p>
+
+  <!-- ── SECTION 2: Index for questions ── -->
+  <h2>Creating an Index for Name Generator Questions</h2>
+
+  <pre><code class="language-r"># Creating an index for identifying questions and ChoiceTextEntry values.
+
+qid_varnames = c("Q1_NG_IM1", "Q2_NG_AC1") # Insert variable names of the name generators.
+
+qid_varqids = c("QID1", "QID2") # Insert QIDs of the name generators.
+
+a &lt;- 10  # Insert the number of fields available in each name generator.
+
+b &lt;- 2   # Insert the number of name generator questions.
+
+c &lt;- a * b</code></pre>
+
+  <p>Here, we are going to create an index for identifying questions and ChoiceTextEntry values in the raw data.</p>
+  <ol>
+    <li>Insert variable names (available in the first row of the raw data) in the <code>qid_varnames</code> list.</li>
+    <li>Insert variable QIDs (available in the third row when saving the data in a CSV form) in the <code>qid_varqids</code> list.</li>
+    <li>Assign the number of fields available in each name generator as the value <code>a</code>. In the sample survey, each IM and AC generator had 10 available fields, so I assigned 10 here.</li>
+    <li>Assign the number of name generator questions as the value <code>b</code>. In the sample survey, there were two name generator questions (IM and AC generators), so the value of <code>b</code> is 2.</li>
+  </ol>
+
+  <pre><code class="language-r">qid &lt;- data.frame(matrix(ncol = 3, nrow = c))
+
+colnames(qid) &lt;- c("QID1", "QID2", "QID3")
+
+counter &lt;- 1
+
+for (m in 1:b) {
+  for (n in 1:a) {
+    qid$QID1[counter] &lt;- paste0(qid_varnames[m], "_", n)
+    qid$QID2[counter] &lt;- counter
+    qid$QID3[counter] &lt;- paste0("{q://", qid_varqids[m], "/ChoiceTextEntryValue/", n, "}")
+    counter &lt;- counter + 1
+  }
+}</code></pre>
+
+  <p>You do not have to change anything from the above part. This part of the script will create a data frame that will be used as an index for coding the raw data. The data frame created from this script will look like:</p>
+
+  <!-- Screenshot 44 -->
+  <div class="figure-block">
+    <img src="images/data4.png" alt="Screenshot: QID index data frame with columns QID1, QID2, QID3 showing variable names, counter numbers, and piped text strings" />
+    <p class="figure-caption">The QID index data frame produced by the script</p>
+  </div>
+
+  <!-- ── SECTION 3: Density index ── -->
+  <h2>Creating an Index for Density Questions</h2>
+
+  <p>Next, we will create another data frame, which will be used as an index for coding the density (or alter-alter tie) data.</p>
+
+  <pre><code class="language-r"># Creating an index for identifying density questions and numbers
+
+k &lt;- nrow(qid)
+
+h &lt;- which(colnames(raw) == "Q9_Density_IM1_1") # Insert the first density question's variable name here.</code></pre>
+
+  <p>Insert the variable name of the first density question (available in the first row of the raw data). In this sample survey, the first variable's name was <code>Q9_Density_IM1_1</code>.</p>
+
+  <pre><code class="language-r">data &lt;- list()
+
+for (i in 1:(k-1)) {
+  for (j in (i+1):k) {
+    data &lt;- c(data, list(c(i, j)))
+  }
+}
+
+densityid &lt;- do.call(rbind, data)
+
+colnames(densityid) &lt;- c('fromid', 'toid')
+
+densityid &lt;- generate_densityid(k)
+
+densityid &lt;- as.data.frame(densityid)
+
+densityid$densityqid &lt;- colnames(raw)[h:(h - 1 + ((k * (k-1)) / 2))]</code></pre>
+
+  <p>You don't have to change any part of this script. This script will generate a data frame (an index for coding the density or alter-alter tie data) that looks like this:</p>
+
+  <!-- Screenshot 45 -->
+  <div class="figure-block">
+    <img src="images/image45.png" alt="Screenshot: densityid data frame with columns fromid, toid, densityqid" />
+    <p class="figure-caption">The <code>densityid</code> index data frame produced by the script</p>
+  </div>
+
+  <!-- ── SECTION 4: Alters data ── -->
+  <h2>Creating the Alters Dataset</h2>
+
+  <p>Now, we are going to make data frames for creating an egor object (<code>threefiles_to_egor</code>). Three files are required to make an egor object: 1) ego data, 2) alters data, and 3) edge data (alter-alter tie or density data).</p>
+  <p>We are going to make alters data first.</p>
+
+  <pre><code class="language-r"># Create an empty data frame "alter." Revise the structure to fit your data.
+
+alter_raw &lt;- data.frame(
+  response_ID    = character(),
+  ego_ID         = numeric(),
+  alter_name     = character(),
+  alter_ID_char  = character(),
+  alter_ID       = numeric(),
+  alter_relationship = character(),
+  alter_gender   = character(),
+  alter_group    = character(),
+  alter_sampled  = character(),
+  stringsAsFactors = FALSE
+)</code></pre>
+
+  <p>This script makes an empty data frame that will be used for storing alters data. Create columns that fit your alter information structure. In this sample survey, we had two name interpreters ("Relationship Type" and "Gender"). So there are <code>alter_relationship</code> and <code>alter_gender</code> columns included in this structure. If you have used more interpreters and need more columns to store data, include those here.</p>
+  <p><code>alter_group</code> is necessary when using multiple name generators (e.g., "Important Matters" and "Academic &amp; Career Matters"). This column will store information on which group ("Important Matters," or "Academic &amp; Career Matters," or both) each listed alter is affiliated.</p>
+  <p>Other parts (<code>response_ID</code>, <code>ego_ID</code>, <code>alter_name</code>, <code>alter_ID_char</code>, <code>alter_ID</code>, <code>alter_sampled</code>, <code>stringsAsFactors</code>) should be left as they are now, since these are for storing the basic information of alters and egos.</p>
+
+  <pre><code class="language-r"># Create an empty data frame "alter_temp." Revise the structure to fit your data.
+
+num &lt;- nrow(raw)
+
+alter_temp &lt;- data.frame(
+  response_ID    = character(num),
+  ego_ID         = numeric(num),
+  alter_name     = character(num),
+  alter_ID_char  = character(num),
+  alter_ID       = numeric(num),
+  alter_relationship = character(num),
+  alter_gender   = character(num),
+  alter_group    = character(num),
+  alter_sampled  = character(num),
+  stringsAsFactors = FALSE
+)</code></pre>
+
+  <p>This script makes an empty data frame that will be used for storing temporary alters data while cleaning. Make this data frame structure look the same as <code>alter_raw</code>. If you added more columns in <code>alter_raw</code>, the same columns should be added in this data frame as well.</p>
+
+  <p>The below script is for cleaning the data: It stores the required information for alters data.</p>
+
+  <pre><code class="language-r"># Identifying variables & recording the responses.
+# Note: Adjust the column/variable names (e.g., raw$SN_showsample_DO) to align with your dataset.
+
+for (i in seq_len(nrow(qid))) {
+
+  qid1_val &lt;- qid[i, "QID1"]
+  qid2_val &lt;- qid[i, "QID2"]
+  qid3_val &lt;- qid[i, "QID3"]
+
+  if (!is.null(raw[[qid1_val]])) {
+
+    alter_temp$response_ID  &lt;- raw$ResponseId                 # Stores Qualtrics response IDs
+    alter_temp$ego_ID       &lt;- raw$ego_ID                     # Stores ego IDs generated in the previous step
+    alter_temp$alter_name   &lt;- raw[[qid1_val]]                # Stores names listed in the name generators
+    alter_temp$alter_ID_char &lt;- paste(raw$ResponseId, "_alter", qid2_val, sep = "")
+                                                               # Assigns alter IDs in character (responseID_alter_number)
+    alter_temp$alter_ID     &lt;- paste((raw$ego_ID) * 100 + qid2_val, sep = "")
+                                                               # Assigns alter IDs in numeric values ("egoID"*100 + number)</code></pre>
+
+  <p>You don't have to change anything in the above part. This script is for saving basic information (response ID of each respondent ('ego'), alter names and IDs).</p>
+
+  <pre><code class="language-r">    alter_temp$alter_relationship &lt;- raw[[paste("SN_relationship_", qid2_val, sep = "")]]
+                                                               # Stores information provided in the "SN_relationship" column.
+
+    alter_temp$alter_gender &lt;- raw[[paste("SN_gender_", qid2_val, sep = "")]]
+                                                               # Stores information provided in the "SN_gender" column.</code></pre>
+
+  <p>Revise this part of the script to fit your data. In the sample survey, there were two name interpreters, so there are two lines of script. Each script stores data in the <code>SN_relationship</code> column and <code>SN_gender</code> column in the raw data.</p>
+
+  <pre><code class="language-r">    alter_temp$alter_group &lt;- ifelse(
+      !is.na(raw$Q3_NG_IM_AC_select) &amp;
+      raw$Q3_NG_IM_AC_select != "" &amp;
+      grepl(paste0("\\$\\", qid3_val), raw$Q3_NG_IM_AC_select),
+      "IMAC",
+      ifelse(qid2_val &gt; (a * (b - 1)), "AC", "IM")
+    )
+    # Stores information about alter's group affiliation
+    # (e.g., 'important matters', 'academic and career matters', or both)</code></pre>
+
+  <p>This line stores alter's group information (e.g., whether the alter was listed in the 'important matters' list, 'academic and career matters' list, or both lists). This information could be found in the overlap measure we created in the survey (see <a href="qualtrics-step3.html">Step 3</a>). The variable name for this question was <code>Q3_NG_IM_AC_select</code>, so I inserted the variable name in the underline spots. Revise the variable name to fit your data.</p>
+
+  <pre><code class="language-r">    alter_temp$alter_sampled &lt;- ifelse(
+      !is.na(raw$Q6_Random_DO) &amp;
+      raw$Q6_Random_DO != "" &amp;
+      grepl(paste0("\\$\\", qid3_val), raw$Q6_Random_DO),
+      "Yes",
+      "No"
+    )
+    # Stores information about whether the alter is sampled for the name interpreters.</code></pre>
+
+  <p>This line stores information about whether the alter is sampled for the name interpreters. This information could be found in the <code>[sample list variable name]_DO</code> column in the raw data. Because I named the sample list question as <code>Q6_Random</code>, the column name is <code>Q6_Random_DO</code>. (DO is short for Display Order.) Revise the variable name to fit your data.</p>
+
+  <pre><code class="language-r">    alter_raw &lt;- rbind(alter_raw, alter_temp)
+  }
+}
+
+alter_raw   &lt;- replace(alter_raw, alter_raw == '', NA)
+alter_clean &lt;- alter_raw[complete.cases(alter_raw$alter_name), ]</code></pre>
+
+  <p>You don't have to change anything in the above part of the script.</p>
+  <p>The above script will generate "alters data" as shown below:</p>
+
+  <!-- Screenshot 46 -->
+  <div class="figure-block">
+    <img src="images/image46.png" alt="Screenshot: alter_clean data frame with columns response_ID, ego_ID, alter_name, alter_ID_char, alter_ID, alter_relationship, alter_gender, alter_group, alter_sampled" />
+    <p class="figure-caption">The <code>alter_clean</code> data frame produced by the cleaning script</p>
+  </div>
+
+  <!-- ── SECTION 5: Density dataset ── -->
+  <h2>Creating the Density (Edge / Alter-Alter Tie) Dataset</h2>
+
+  <p>Next, we are going to create a density ("edge" or "alter-alter tie") dataset. This part of the script is fully automated, and you won't have to change anything from this script.</p>
+
+  <pre><code class="language-r"># Creating density (edge or alter-alter tie) dataset
+
+alter_ties_raw &lt;- data.frame(
+  response_ID = character(),
+  ego_ID      = numeric(),
+  from        = character(),
+  to          = character(),
+  weight      = numeric(),
+  stringsAsFactors = FALSE
+)
+
+alter_ties_temp &lt;- data.frame(
+  response_ID = character(num),
+  ego_ID      = numeric(num),
+  from        = character(num),
+  to          = character(num),
+  weight      = numeric(num),
+  stringsAsFactors = FALSE
+)
+
+for (j in seq_len(nrow(densityid))) {
+
+  denid_val1 &lt;- densityid[j, "densityqid"]
+  denid_val2 &lt;- densityid[j, "fromid"]
+  denid_val3 &lt;- densityid[j, "toid"]
+
+  if (!is.null(raw[[denid_val1]])) {
+
+    alter_ties_temp$response_ID &lt;- raw$ResponseId
+
+    alter_ties_temp$ego_ID &lt;- raw$ego_ID
+
+    alter_ties_temp$from &lt;- ifelse(
+      !is.na(raw[[denid_val1]]),
+      paste((raw$ego_ID * 100) + denid_val2, sep = ""),
+      NA
+    )
+
+    alter_ties_temp$to &lt;- ifelse(
+      !is.na(raw[[denid_val1]]),
+      paste((raw$ego_ID * 100) + denid_val3, sep = ""),
+      NA
+    )
+
+    alter_ties_temp$weight &lt;- ifelse(!is.na(raw[[denid_val1]]), 1, NA)
+
+    alter_ties_raw &lt;- rbind(alter_ties_raw, alter_ties_temp)
+  }
+}
+
+alter_ties_raw   &lt;- replace(alter_ties_raw, alter_ties_raw == '', NA)
+alter_ties_clean &lt;- alter_ties_raw[complete.cases(alter_ties_raw$weight), ]</code></pre>
+
+  <p>The above script will generate the alter-alter ties data frame as shown below:</p>
+
+  <!-- Screenshot 47 -->
+  <div class="figure-block">
+    <img src="images/data5.png" alt="Screenshot: alter_ties_clean data frame with columns response_ID, ego_ID, from, to, weight" />
+    <p class="figure-caption">The <code>alter_ties_clean</code> data frame produced by the cleaning script</p>
+  </div>
+
+  <p><code>response_ID</code> and <code>ego_ID</code> are the IDs of the respondent ('ego'). The <code>from</code> and <code>to</code> columns have alter IDs, representing pairs of alters who know/hang out/talk to each other. <code>weight</code> is 1 in this dataset because we did not ask questions about closeness or tie strength between listed alters.</p>
+
+  <!-- ── SECTION 6: Save files ── -->
+  <h2>Saving the Created Datasets</h2>
+
+  <pre><code class="language-r"># Saving the created datasets
+
+ego &lt;- raw[, c("ego_ID", "ResponseId")]
+
+colnames(ego) &lt;- c("ego_ID", "response_ID")</code></pre>
+
+  <p>The above script creates ego data.</p>
+
+  <pre><code class="language-r">write.csv(ego,              "ego_data.csv")
+write.csv(alter_clean,      "alter_attr.csv")
+write.csv(alter_ties_clean, "alter_ties.csv")</code></pre>
+
+  <p>Finally, this script stores 1) ego data, 2) alters data, and 3) edge data (alter-alter tie or density data) as CSV files. If you want to learn how to create an egor object, click <a href="https://rdrr.io/cran/egor/man/threefiles_to_egor.html" target="_blank" rel="noopener">here</a>.</p>
+
+  <div class="callout tip">
+    <div class="callout-title">You've reached the end of the handbook!</div>
+    If you have questions or suggestions, please contact Kyoungjin Jang-Tucci at <a href="mailto:kjang26@wisc.edu">kjang26@wisc.edu</a>.
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="r-step1.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 1: Download &amp; Prepare Data</span>
+    </a>
+    <a class="next" href="index.html">
+      <span class="nav-direction">↩ Back to</span>
+      <span class="nav-label">Home</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

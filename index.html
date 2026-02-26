@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MGRI Research Methods Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
 
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<!-- ===================== SIDEBAR ===================== -->
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo">
+      <span class="logo-badge">NCA</span>
+    </div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<!-- ===================== MAIN ===================== -->
+<main id="main">
+<div class="content-wrapper">
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-eyebrow">Research Methods Handbook · First Published July 2023  · Last Updated February 2026</div>
+    <h1 class="hero-title">A Step-by-Step Guide for Implementing the Multiple Generator Random Interpreter (MGRI) in Online Surveys</h1>
+    <p class="hero-meta">
+      Kyoungjin Jang-Tucci<br>
+      Center for Research on College-Workforce Transitions (CCWT)<br>
+      Division of Continuing Studies · University of Wisconsin–Madison
+    </p>
+  </div>
+
+  <div class="callout note">
+    <div class="callout-title">About This Handbook</div>
+    This handbook will show you how to build a survey using the Multiple Generator Random Interpreter (MGRI) method in Qualtrics and how to clean the data collected from the survey. This handbook does not provide a conceptual introduction to MGRI. To learn what MGRI is and how it could benefit your study, please refer to <a href="https://doi.org/10.1177/1525822X06298588" target="_blank" rel="noopener">Marin &amp; Hampton (2007)</a>. Our <a href = "https://doi.org/10.31235/osf.io/vm9cx_v1" target = _blank>research brief</a> also provides information about using MGRI in online surveys.
+  </div>
+
+  <!-- Table of Contents -->
+  <p class="toc-section-title">Getting Started</p>
+  <div class="toc-grid">
+    <a class="toc-card" href="how-to-use.html">
+      <span class="card-num">→</span>
+      <span>
+        <div class="card-text">How to Use This Handbook</div>
+        <div class="card-sub">Requirements, download, tips, citation</div>
+      </span>
+    </a>
+    <a class="toc-card" href="sample-survey.html">
+      <span class="card-num">→</span>
+      <span>
+        <div class="card-text">Sample Survey</div>
+        <div class="card-sub">Screenshot tour of the full MGRI survey</div>
+      </span>
+    </a>
+  </div>
+
+  <p class="toc-section-title">Implementing Survey in Qualtrics</p>
+  <div class="toc-grid">
+    <a class="toc-card" href="qualtrics-step1.html">
+      <span class="card-num">1</span>
+      <span>
+        <div class="card-text">Creating Survey Blocks</div>
+        <div class="card-sub">Set up the three main blocks</div>
+      </span>
+    </a>
+    <a class="toc-card" href="qualtrics-step2.html">
+      <span class="card-num">2</span>
+      <span>
+        <div class="card-text">Creating Name Generators</div>
+        <div class="card-sub">Q1_NG_IM1 and Q2_NG_AC1</div>
+      </span>
+    </a>
+    <a class="toc-card" href="qualtrics-step3.html">
+      <span class="card-num">3</span>
+      <span>
+        <div class="card-text">List Overlap Measure</div>
+        <div class="card-sub">Q3_IM_AC_select, piped text &amp; display logic</div>
+      </span>
+    </a>
+    <a class="toc-card" href="qualtrics-step4.html">
+      <span class="card-num">4</span>
+      <span>
+        <div class="card-text">Survey Proceeding Logic</div>
+        <div class="card-sub">Block branch logic for skipping</div>
+      </span>
+    </a>
+    <a class="toc-card" href="qualtrics-step5.html">
+      <span class="card-num">5</span>
+      <span>
+        <div class="card-text">Random Subset / Sample List</div>
+        <div class="card-sub">Q6_Random — randomized name sampling</div>
+      </span>
+    </a>
+    <a class="toc-card" href="qualtrics-step6.html">
+      <span class="card-num">6</span>
+      <span>
+        <div class="card-text">Name Interpreters</div>
+        <div class="card-sub">Q7_NI_relationship, Q8_NI_gender</div>
+      </span>
+    </a>
+    <a class="toc-card" href="qualtrics-step7.html">
+      <span class="card-num">7</span>
+      <span>
+        <div class="card-text">Network Density Questions</div>
+        <div class="card-sub">Q9_Density_IM1 … Q27_Density_AC9</div>
+      </span>
+    </a>
+    <a class="toc-card" href="qualtrics-tip.html">
+      <span class="card-num">💡</span>
+      <span>
+        <div class="card-text">Tip: Preventing Duplicate Names</div>
+        <div class="card-sub">Custom validation logic</div>
+      </span>
+    </a>
+  </div>
+
+  <p class="toc-section-title">Data Cleaning in R</p>
+  <div class="toc-grid">
+    <a class="toc-card" href="r-step1.html">
+      <span class="card-num">1</span>
+      <span>
+        <div class="card-text">Download &amp; Prepare the Data</div>
+        <div class="card-sub">Export from Qualtrics, prepare CSV</div>
+      </span>
+    </a>
+    <a class="toc-card" href="r-step2.html">
+      <span class="card-num">2</span>
+      <span>
+        <div class="card-text">Check &amp; Run the Cleaning Script</div>
+        <div class="card-sub">Full R script walkthrough</div>
+      </span>
+    </a>
+  </div>
+
+  <!-- Citation -->
+  <h2>Suggested Citation</h2>
+  <div class="callout note">
+    <div class="callout-title">Citation</div>
+    Jang-Tucci, K. (2023). <em>A Step-by-Step Guide for Implementing the Multiple Generator Random Interpreter (MGRI) in Online Surveys.</em> Center for Research on College-Workforce Transitions. University of Wisconsin–Madison.
+  </div>
+
+  <!-- Questions -->
+  <h2>Questions &amp; Feedback</h2>
+  <p>If you have questions or feedback about this handbook and toolkit (any suggestions to improve the toolkit are welcome!), please contact Kyoungjin Jang-Tucci at <a href="mailto:kjang26@wisc.edu">kjang26@wisc.edu</a>.</p>
+
+  <!-- Footer nav -->
+  <div class="page-nav">
+    <span></span>
+    <a class="next" href="how-to-use.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">How to Use This Handbook</span>
+    </a>
+  </div>
+
+</div><!-- /.content-wrapper -->
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 4: Survey Proceeding Logic — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Implementing Survey in Qualtrics</div>
+    <h1 class="page-title">Step 4: Creating Survey Proceeding Logic</h1>
+  </div>
+
+  <p>Here, we're going to set up <a href="https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/branch-logic/" target="_blank" rel="noopener">block branch logic</a>. This logic is for making respondents who did not list any names in the two name generators skip the name interpreters and density questions.</p>
+
+  <!-- Screenshot 21 -->
+  <div class="figure-block">
+    <img src="images/Slide21.png" alt="Screenshot: Survey Flow panel — Survey Flow button highlighted, Add a New Element Here, Branch options" />
+    <p class="figure-caption">Opening Survey Flow and adding a Branch element</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Click "Survey Flow" (highlighted).</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Click "Add a New Element Here."</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Click "Branch."</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 22 -->
+  <div class="figure-block">
+    <img src="images/Slide22.png" alt="Screenshot: Moving Branch element under Name Generator block, moving Name Interpreters and Density Questions under it" />
+    <p class="figure-caption">Rearranging blocks under the Branch element</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">4</span>
+      <h3>Move the created element to be under the "Name Generator" block.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">5</span>
+      <h3>Move "Name Interpreters" and "Density Questions" to be under the created element.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">6</span>
+      <h3>Click "Add a Condition."</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 23 -->
+  <div class="figure-block">
+    <img src="images/Slide23.png" alt="Screenshot: Branch logic conditions dialog showing IM and AC generator conditions" />
+    <p class="figure-caption">Setting up the "Then Branch If" logic conditions</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">7</span>
+      <h3>Add "Then Branch If" logic. Add logic as follows:</h3>
+    </div>
+    <div class="step-content">
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Logic</th>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Field Name</th>
+              <th>Condition Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Or</td>
+              <td>Question</td>
+              <td><code>Q1_NG_IM1</code></td>
+              <td>1, 2, 3, … K</td>
+              <td>Is Not Empty</td>
+            </tr>
+            <tr>
+              <td>Or</td>
+              <td>Question</td>
+              <td><code>Q2_NG_AC1</code></td>
+              <td>1, 2, 3, … K</td>
+              <td>Is Not Empty</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>This logic lets only the respondents who listed any name in the name generators see the name interpreters and density questions. Respondents who did not list any names in the IM or AC generators will not see any of the name interpreters and density questions.</p>
+    </div>
+  </div>
+
+  <!-- Screenshot 24 -->
+  <div class="figure-block">
+    <img src="images/Slide24.png" alt="Screenshot: Completed branch logic dialog with Ok and Apply buttons" />
+    <p class="figure-caption">Clicking Ok and Apply to save the branch logic</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">8</span>
+      <h3>After adding all conditions, click "Ok" and "Apply" (right down corner).</h3>
+    </div>
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-step3.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 3: List Overlap Measure</span>
+    </a>
+    <a class="next" href="qualtrics-step5.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Step 5: Random Subset / Sample List</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

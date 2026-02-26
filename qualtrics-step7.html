@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 7: Network Density Questions — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Implementing Survey in Qualtrics</div>
+    <h1 class="page-title">Step 7: Creating Network Density Questions</h1>
+    <p class="page-subtitle"><code>Q9_Density_IM1</code> … <code>Q27_Density_AC9</code></p>
+  </div>
+
+  <p>Finally, we are going to create density questions (or alter-alter tie questions). Here, each question will ask respondents if <strong>alter A</strong> knows/hangs out/talks to <strong>other alters listed in the sample list (alter B, C, D…)</strong> independently of them.</p>
+
+  <p>In order to do this, we need to make questions that apply to all possible alters listed, and set the question display logic so respondents see questions about alters sampled in the sample list.</p>
+
+  <p>To make this happen, we have to make <strong>(K-1) questions</strong> in the density block, where K is the total number of available fields in the name generators. Since we have a total of 20 available fields in this sample survey, the number of questions should be <strong>19</strong>.</p>
+
+  <p>In summary, each question in this block should:</p>
+  <ol>
+    <li>Have <strong>one reference alter (alter N)</strong>. Each "alter N" should reference one each field <strong>from the first available field</strong> (IM field 1 in this sample survey) <strong>to the second to last available field</strong> (AC field 9).</li>
+    <li>Have a list of all other alters <strong>listed after the reference alter</strong>.</li>
+    <li>Embed question display logic so the question is shown to respondents only when the reference alter is displayed in the sample list.</li>
+    <li>Embed choice display logic so alters are shown to respondents only when the alters are displayed in the sample list.</li>
+  </ol>
+
+  <p>The figure below shows the conditions described above when there are four fields available in one name generator.</p>
+
+  <!-- Screenshot 33 -->
+  <div class="figure-block">
+    <img src="images/Slide34.png" alt="Diagram: Density question structure showing reference alter and subsequent alters for a 4-field example" />
+    <p class="figure-caption">Diagram: Density question structure for a generator with 4 available fields</p>
+  </div>
+
+  <h2>Building the First Density Question</h2>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Create a question in the "Density Questions" block and set up the question type to be "Matrix table."</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Set up the number of statements to be equal to the number of all available fields in the name generators.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Set up the number of scale points to be <strong>1</strong>. This scale point is going to be the reference alter.</h3>
+    </div>
+    <div class="step-content">
+      <p>Insert the piped text of the referenced alter (e.g., <code>${q://QID1/ChoiceTextEntryValue/1}</code>).</p>
+    </div>
+  </div>
+
+  <!-- Screenshot 34 — question display logic -->
+  <div class="figure-block">
+    <img src="images/Slide35.png" alt="Screenshot: Question display logic for the first density question — referencing Q6_Random Is Displayed and checking that more than one alter exists" />
+    <p class="figure-caption">Question display logic for the first density question</p>
+  </div>
+
+  <p>Here, we are going to set up question display logic so the question shows only (A) when the reference alter is sampled in the randomizer question, and (B) when there is more than one alter in the name list (it would be strange to see density questions if a respondent only wrote one name!).</p>
+
+  <div class="step-block" id="step7-5">
+    <div class="step-heading">
+      <span class="step-badge">5</span>
+      <h3>Insert choice text to each available field in the name generator (See <a href="qualtrics-step3.html#inserting-choice-text">Step 3-(5)</a> or <a href="qualtrics-step5.html#step5-3">Step 5-(3)-1</a>) and set up the choice display logic (See <a href="qualtrics-step6.html#step6-5">Step 6-(5)</a> for directions or below).</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 35 — display logic detail -->
+  <div class="figure-block">
+    <img src="images/Slide36.png" alt="Screenshot: Detailed display logic panel for density question — two logic sets referencing Q6_Random" />
+    <p class="figure-caption">Detailed display logic for the density question using two logic sets</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(6)-1</span>
+      <h3>Click "Display logic" on the left.</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge sub">(6)-2</span>
+      <h3>Add the display logic as follows. (See the sample Qualtrics survey to see all listed conditions.)</h3>
+    </div>
+    <div class="step-content sub">
+      <p><strong>A.</strong> Set up the first condition to be: Randomizer question (<code>Q6_Random</code>) field K (the referenced alter) <strong>"Is Displayed"</strong></p>
+      <p><strong>B.</strong> Add another logic, and click "Move to a new Logic Set."</p>
+      <p><strong>C.</strong> Add a second set of logic. This should look: Randomizer question (<code>Q6_Random</code>) field K (each of other fields) <strong>"Is Displayed."</strong> Add logic to as many choices as are available in the question.</p>
+    </div>
+  </div>
+
+  <h2>Copying and Editing Subsequent Density Questions</h2>
+
+  <p>After the first density question is made, we can just copy and edit the rest.</p>
+
+  <!-- Screenshot 36 -->
+  <div class="figure-block">
+    <img src="images/Slide38.png" alt="Screenshot: Copy button on the density question — '...' menu with Copy option" />
+    <p class="figure-caption">Copying the first density question using the "…" menu</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Click the "…" button on the right corner of the question and click "Copy."</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 37 -->
+  <div class="figure-block">
+    <img src="images/Slide39.png" alt="Screenshot: Editing the display logic for the second density question — field 2 of IM generator" />
+    <p class="figure-caption">Editing display logic for the second density question to reference field 2</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Edit the question display logic.</h3>
+    </div>
+    <div class="step-content">
+      <p>For the second density question, the referred alter should be field 2 of the IM generator (e.g., <code>${q://QID1/ChoiceTextEntryValue/2}</code>). Delete <code>${q://QID1/ChoiceTextEntryValue/2}</code> in the second set of logic (i.e., after "AND").</p>
+    </div>
+  </div>
+
+  <!-- Screenshot 38 -->
+  <div class="figure-block">
+    <img src="images/Slide40.png" alt="Screenshot: Prompt and scale point of the second density question updated to reference field 2" />
+    <p class="figure-caption">Updating the prompt and scale point to reference field 2 of the IM generator</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Make sure the prompt and the scale point is referring to field 2 of the IM generator (e.g., <code>${q://QID1/ChoiceTextEntryValue/2}</code>).</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">4</span>
+      <h3>Delete <code>${q://QID1/ChoiceTextEntryValue/2}</code> from the choice options.</h3>
+    </div>
+  </div>
+
+  <!-- Screenshot 39 -->
+  <div class="figure-block">
+    <img src="images/Slide41.png" alt="Screenshot: Final density question with only one choice remaining" />
+    <p class="figure-caption">The last density question has only one choice remaining</p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">5</span>
+      <h3>Copy and edit until there is one choice left in the question.</h3>
+    </div>
+  </div>
+
+  <div class="callout tip">
+    <div class="callout-title">Up Next</div>
+    Before finishing the Qualtrics setup, check out the tip on <a href="qualtrics-tip.html">preventing respondents from listing the same person multiple times</a>.
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-step6.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 6: Name Interpreters</span>
+    </a>
+    <a class="next" href="qualtrics-tip.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Tip: Preventing Duplicate Names</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

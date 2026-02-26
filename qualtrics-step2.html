@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Step 2: Creating Name Generators — MGRI Handbook</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<button id="sidebar-toggle" aria-label="Toggle sidebar">☰</button>
+
+<nav id="sidebar" aria-label="Handbook navigation">
+  <div class="sidebar-header">
+    <div class="sidebar-logo"><span class="logo-badge">NCA</span></div>
+    <div class="sidebar-title">MGRI Research Methods Handbook</div>
+    <div class="sidebar-subtitle">University of Wisconsin–Madison</div>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Getting Started</div>
+    <a class="nav-link" href="index.html">Home</a>
+    <a class="nav-link" href="how-to-use.html">How to Use This Handbook</a>
+    <a class="nav-link" href="sample-survey.html">Sample Survey</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Implementing in Qualtrics</div>
+    <a class="nav-link" href="qualtrics-step1.html"><span class="step-num">1</span> Creating Survey Blocks</a>
+    <a class="nav-link" href="qualtrics-step2.html"><span class="step-num">2</span> Name Generators</a>
+    <a class="nav-link" href="qualtrics-step3.html"><span class="step-num">3</span> List Overlap Measure</a>
+    <a class="nav-link" href="qualtrics-step4.html"><span class="step-num">4</span> Survey Proceeding Logic</a>
+    <a class="nav-link" href="qualtrics-step5.html"><span class="step-num">5</span> Random Subset / Sample List</a>
+    <a class="nav-link" href="qualtrics-step6.html"><span class="step-num">6</span> Name Interpreters</a>
+    <a class="nav-link" href="qualtrics-step7.html"><span class="step-num">7</span> Network Density Questions</a>
+    <a class="nav-link" href="qualtrics-tip.html">💡 Tip: Prevent Duplicate Names</a>
+  </div>
+  <div class="nav-section">
+    <div class="nav-section-label">Data Cleaning in R</div>
+    <a class="nav-link" href="r-step1.html"><span class="step-num">1</span> Download &amp; Prepare Data</a>
+    <a class="nav-link" href="r-step2.html"><span class="step-num">2</span> Run the Cleaning Script</a>
+  </div>
+</nav>
+
+<main id="main">
+<div class="content-wrapper">
+
+  <div class="page-header">
+    <div class="page-eyebrow">Implementing Survey in Qualtrics</div>
+    <h1 class="page-title">Step 2: Creating Name Generators</h1>
+    <p class="page-subtitle">Creating <code>Q1_NG_IM1</code> and <code>Q2_NG_AC1</code></p>
+  </div>
+
+  <p>Now, we are going to create name generators. Go back to "Builder" and create a question in the Name Generator block.</p>
+
+  <!-- IM Generator -->
+  <div class="figure-block">
+    <img src="images/Slide14.png" alt="Screenshot: IM name generator question — Form field type, 10 fields, question prompt" />
+    <p class="figure-caption">IM (Important Matters) name generator — <code>Q1_NG_IM1</code></p>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">1</span>
+      <h3>Set the question type as "<a href="https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/question-types-guide/standard-content/form-field-question/?parent=p001132" target="_blank" rel="noopener">Form field</a>."</h3>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">2</span>
+      <h3>Set the number of <strong>fields</strong> (boxes) where respondents can list people's names.</h3>
+    </div>
+    <div class="step-content">
+      <p>Here, I made 10 boxes, but the number of boxes is dependent on your decision about how many blank spaces you'd like respondents to see on each page. For the NCA Project survey, we first provided 5 boxes and showed 5 more boxes if respondents filled all available boxes. Those who filled out all 10 boxes saw another (and the last) set of 5 boxes.</p>
+    </div>
+  </div>
+
+  <div class="step-block">
+    <div class="step-heading">
+      <span class="step-badge">3</span>
+      <h3>Write the question prompt.</h3>
+    </div>
+  </div>
+
+  <div class="callout note">
+    <div class="callout-title">Note</div>
+    This name generator question will be referenced frequently in the following steps! I will refer to this generator question as the <strong>"IM (Important Matter) generator"</strong> or its question ID (<strong><code>Q1_NG_IM1</code></strong>).
+  </div>
+
+  <!-- AC Generator -->
+  <div class="figure-block">
+    <img src="images/Slide15.png" alt="Screenshot: AC name generator question — same structure as IM but different prompt" />
+    <p class="figure-caption">AC (Academic &amp; Career Matters) name generator — <code>Q2_NG_AC1</code></p>
+  </div>
+
+  <p>This is the second name generator. Every part of this generator is the same as the previous one, except for the prompt.</p>
+
+  <div class="callout note">
+    <div class="callout-title">Note</div>
+    This name generator question will also be referenced frequently in the following steps! I will refer to this generator question as the <strong>"AC (Academic &amp; Career Matter) generator"</strong> or <strong><code>Q2_NG_AC1</code></strong>.
+  </div>
+
+  <div class="callout important">
+    <div class="callout-title">Important</div>
+    Make sure to add <a href="https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/add-page-break/?parent=p0030" target="_blank" rel="noopener">Page Breaks</a> between every question in the survey.
+  </div>
+
+  <div class="page-nav">
+    <a class="prev" href="qualtrics-step1.html">
+      <span class="nav-direction">← Previous</span>
+      <span class="nav-label">Step 1: Creating Survey Blocks</span>
+    </a>
+    <a class="next" href="qualtrics-step3.html">
+      <span class="nav-direction">Next →</span>
+      <span class="nav-label">Step 3: List Overlap Measure</span>
+    </a>
+  </div>
+
+</div>
+</main>
+
+<script src="js/nav.js"></script>
+</body>
+</html>

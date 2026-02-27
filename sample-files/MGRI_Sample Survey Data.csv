@@ -1,0 +1,1270 @@
+StartDate,EndDate,Status,IPAddress,Progress,Duration (in seconds),Finished,RecordedDate,ResponseId,RecipientLastName,RecipientFirstName,RecipientEmail,ExternalReference,LocationLatitude,LocationLongitude,DistributionChannel,UserLanguage,Q1_NG_IM1_1,Q1_NG_IM1_2,Q1_NG_IM1_3,Q1_NG_IM1_4,Q1_NG_IM1_5,Q1_NG_IM1_6,Q1_NG_IM1_7,Q1_NG_IM1_8,Q1_NG_IM1_9,Q1_NG_IM1_10,Q3_NG_IM_AC_select,Q2_NG_AC1_1,Q2_NG_AC1_2,Q2_NG_AC1_3,Q2_NG_AC1_4,Q2_NG_AC1_5,Q2_NG_AC1_6,Q2_NG_AC1_7,Q2_NG_AC1_8,Q2_NG_AC1_9,Q2_NG_AC1_10,Q6_Random,Q6_Random_DO,Q7_NI_relationship_1,Q7_NI_relationship_2,Q7_NI_relationship_3,Q7_NI_relationship_4,Q7_NI_relationship_5,Q7_NI_relationship_6,Q7_NI_relationship_7,Q7_NI_relationship_8,Q7_NI_relationship_9,Q7_NI_relationship_10,Q7_NI_relationship_11,Q7_NI_relationship_12,Q7_NI_relationship_13,Q7_NI_relationship_14,Q7_NI_relationship_15,Q7_NI_relationship_16,Q7_NI_relationship_17,Q7_NI_relationship_18,Q7_NI_relationship_19,Q7_NI_relationship_20,Q8_NI_gender_1,Q8_NI_gender_2,Q8_NI_gender_3,Q8_NI_gender_4,Q8_NI_gender_5,Q8_NI_gender_6,Q8_NI_gender_7,Q8_NI_gender_8,Q8_NI_gender_9,Q8_NI_gender_10,Q8_NI_gender_11,Q8_NI_gender_12,Q8_NI_gender_13,Q8_NI_gender_14,Q8_NI_gender_15,Q8_NI_gender_16,Q8_NI_gender_17,Q8_NI_gender_18,Q8_NI_gender_19,Q8_NI_gender_20,SN_support_material,Q9_Density_IM1_1,Q9_Density_IM1_2,Q9_Density_IM1_3,Q9_Density_IM1_4,Q9_Density_IM1_5,Q9_Density_IM1_6,Q9_Density_IM1_7,Q9_Density_IM1_8,Q9_Density_IM1_9,Q9_Density_IM1_10,Q9_Density_IM1_11,Q9_Density_IM1_12,Q9_Density_IM1_13,Q9_Density_IM1_14,Q9_Density_IM1_15,Q9_Density_IM1_16,Q9_Density_IM1_17,Q9_Density_IM1_18,Q9_Density_IM1_19,Q10_Density_IM2_1,Q10_Density_IM2_2,Q10_Density_IM2_3,Q10_Density_IM2_4,Q10_Density_IM2_5,Q10_Density_IM2_6,Q10_Density_IM2_7,Q10_Density_IM2_8,Q10_Density_IM2_9,Q10_Density_IM2_10,Q10_Density_IM2_11,Q10_Density_IM2_12,Q10_Density_IM2_13,Q10_Density_IM2_14,Q10_Density_IM2_15,Q10_Density_IM2_16,Q10_Density_IM2_17,Q10_Density_IM2_18,Q11_Density_IM3_1,Q11_Density_IM3_2,Q11_Density_IM3_3,Q11_Density_IM3_4,Q11_Density_IM3_5,Q11_Density_IM3_6,Q11_Density_IM3_7,Q11_Density_IM3_8,Q11_Density_IM3_9,Q11_Density_IM3_10,Q11_Density_IM3_11,Q11_Density_IM3_12,Q11_Density_IM3_13,Q11_Density_IM3_14,Q11_Density_IM3_15,Q11_Density_IM3_16,Q11_Density_IM3_17,Q12_Density_IM4_1,Q12_Density_IM4_2,Q12_Density_IM4_3,Q12_Density_IM4_4,Q12_Density_IM4_5,Q12_Density_IM4_6,Q12_Density_IM4_7,Q12_Density_IM4_8,Q12_Density_IM4_9,Q12_Density_IM4_10,Q12_Density_IM4_11,Q12_Density_IM4_12,Q12_Density_IM4_13,Q12_Density_IM4_14,Q12_Density_IM4_15,Q12_Density_IM4_16,Q13_Density_IM5_1,Q13_Density_IM5_2,Q13_Density_IM5_3,Q13_Density_IM5_4,Q13_Density_IM5_5,Q13_Density_IM5_6,Q13_Density_IM5_7,Q13_Density_IM5_8,Q13_Density_IM5_9,Q13_Density_IM5_10,Q13_Density_IM5_11,Q13_Density_IM5_12,Q13_Density_IM5_13,Q13_Density_IM5_14,Q13_Density_IM5_15,Q14_Density_IM6_1,Q14_Density_IM6_2,Q14_Density_IM6_3,Q14_Density_IM6_4,Q14_Density_IM6_5,Q14_Density_IM6_6,Q14_Density_IM6_7,Q14_Density_IM6_8,Q14_Density_IM6_9,Q14_Density_IM6_10,Q14_Density_IM6_11,Q14_Density_IM6_12,Q14_Density_IM6_13,Q14_Density_IM6_14,Q15_Density_IM7_1,Q15_Density_IM7_2,Q15_Density_IM7_3,Q15_Density_IM7_4,Q15_Density_IM7_5,Q15_Density_IM7_6,Q15_Density_IM7_7,Q15_Density_IM7_8,Q15_Density_IM7_9,Q15_Density_IM7_10,Q15_Density_IM7_11,Q15_Density_IM7_12,Q15_Density_IM7_13,Q16_Density_IM8_1,Q16_Density_IM8_2,Q16_Density_IM8_3,Q16_Density_IM8_4,Q16_Density_IM8_5,Q16_Density_IM8_6,Q16_Density_IM8_7,Q16_Density_IM8_8,Q16_Density_IM8_9,Q16_Density_IM8_10,Q16_Density_IM8_11,Q16_Density_IM8_12,Q17_Density_IM9_1,Q17_Density_IM9_2,Q17_Density_IM9_3,Q17_Density_IM9_4,Q17_Density_IM9_5,Q17_Density_IM9_6,Q17_Density_IM9_7,Q17_Density_IM9_8,Q17_Density_IM9_9,Q17_Density_IM9_10,Q17_Density_IM9_11,Q18_Density_IM10_1,Q18_Density_IM10_2,Q18_Density_IM10_3,Q18_Density_IM10_4,Q18_Density_IM10_5,Q18_Density_IM10_6,Q18_Density_IM10_7,Q18_Density_IM10_8,Q18_Density_IM10_9,Q18_Density_IM10_10,Q19_Density_AC1_1,Q19_Density_AC1_2,Q19_Density_AC1_3,Q19_Density_AC1_4,Q19_Density_AC1_5,Q19_Density_AC1_6,Q19_Density_AC1_7,Q19_Density_AC1_8,Q19_Density_AC1_9,Q20_Density_AC2_1,Q20_Density_AC2_2,Q20_Density_AC2_3,Q20_Density_AC2_4,Q20_Density_AC2_5,Q20_Density_AC2_6,Q20_Density_AC2_7,Q20_Density_AC2_8,Q21_Density_AC3_1,Q21_Density_AC3_2,Q21_Density_AC3_3,Q21_Density_AC3_4,Q21_Density_AC3_5,Q21_Density_AC3_6,Q21_Density_AC3_7,Q22_Density_AC4_1,Q22_Density_AC4_2,Q22_Density_AC4_3,Q22_Density_AC4_4,Q22_Density_AC4_5,Q22_Density_AC4_6,Q23_Density_AC5_1,Q23_Density_AC5_2,Q23_Density_AC5_3,Q23_Density_AC5_4,Q23_Density_AC5_5,Q24_Density_AC6_1,Q24_Density_AC6_2,Q24_Density_AC6_3,Q24_Density_AC6_4,Q25_Density_AC7_1,Q25_Density_AC7_2,Q25_Density_AC7_3,Q26_Density_AC8_1,Q26_Density_AC8_2,Q27_Density_AC9_1
+Start Date,End Date,Response Type,IP Address,Progress,Duration (in seconds),Finished,Recorded Date,Response ID,Recipient Last Name,Recipient First Name,Recipient Email,External Data Reference,Location Latitude,Location Longitude,Distribution Channel,User Language,"From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 1","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 2","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 3","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 4","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 5","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 6","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 7","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 8","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 9","From time to time, most people discuss things that are important to them with other people. For example, these may include good or bad things that happen to you, problems you are having, or important concerns you may have.
+
+
+Please list the first name and last initial (for example, ""Amy G"" for Amy Garcia) of all people with whom you have discussed matters important to you during the last 6 months. 
+
+Please note:
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box. - 10","Have you discussed academic or career matters with any of these people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+Click the box with the person's name if you have discussed academic or career matters with that individual during the last 6 months.","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 1","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 2","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 3","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 4","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 5","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 6","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 7","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 8","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 9","Aside from the other people you may have listed, have you discussed academic or career matters with any other people during the last 6 months? (For example, your major area of study, academic or career goals, or job opportunities)
+
+
+If you have, list the first name and last initial of all people with whom you have discussed academic or career matters during the last 6 months (for example, ""Amy G"" for Amy Garcia).
+
+If not, click → button to move on.
+
+Please note:
+
+Only add people you have not already listed.
+
+You do not have to use all the spaces available.
+
+The order you list names does not matter.
+
+Please list only one name per box.
+
+Please do not list full (first and last) names.We're not interested in exactly who these people are and will not be involving them in this study. - 10","Thank you. Now we will ask you some questions about the people listed below.
+
+Click → button to see the questions.","Thank you. Now we will ask you some questions about the people listed below.
+
+Click → button to see the questions. - Display Order","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-1]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-2]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-3]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-4]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-5]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-6]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-7]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-8]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-9]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID1-ChoiceTextEntryValue-10]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-1]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-2]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-3]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-4]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-5]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-6]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-7]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-8]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-9]","Here are some different ways you may be connected to people. For each person in the list, select the way that person is connected you.
+
+
+You can select more than one response if that person is connected to you in multiple ways. - [QID2-ChoiceTextEntryValue-10]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-1]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-2]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-3]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-4]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-5]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-6]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-7]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-8]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-9]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID1-ChoiceTextEntryValue-10]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-1]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-2]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-3]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-4]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-5]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-6]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-7]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-8]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-9]","To the best of your knowledge, with what gender does each person identify?
+
+
+
+Information on gender terms (Link) - [QID2-ChoiceTextEntryValue-10]","We would now like to ask about the kinds of support you may or may not receive from the people you listed. 
+
+Please click the box of each person who has provided you material aid in the form of money, food, clothes, etc.","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-2]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-3]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-4]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-5]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-6]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-7]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-8]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","For the last questions of this section we want to understand who among the people you listed know one another.
+
+
+Check the corresponding box if you think [QID1-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+ If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID1-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-1]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID1-ChoiceTextEntryValue-10] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID1-ChoiceTextEntryValue-10] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-2]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-1] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-1] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-3]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-2] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-2] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-4]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-3] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-3] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-5]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-4] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-4] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-6]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-5] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-5] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-7]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-6] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-6] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-8]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-7] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-7] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-9]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-8] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-8] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]","Check the corresponding box if you think [QID2-ChoiceTextEntryValue-9] and the corresponding person talk or hang out independently of you.
+
+Leave the box unchecked if [QID2-ChoiceTextEntryValue-9] and the person do not talk or hang out independently of you.
+
+If you do not know for sure, give your best guess. - [QID2-ChoiceTextEntryValue-10]"
+"{""ImportId"":""startDate"",""timeZone"":""America/Chicago""}","{""ImportId"":""endDate"",""timeZone"":""America/Chicago""}","{""ImportId"":""status""}","{""ImportId"":""ipAddress""}","{""ImportId"":""progress""}","{""ImportId"":""duration""}","{""ImportId"":""finished""}","{""ImportId"":""recordedDate"",""timeZone"":""America/Chicago""}","{""ImportId"":""_recordId""}","{""ImportId"":""recipientLastName""}","{""ImportId"":""recipientFirstName""}","{""ImportId"":""recipientEmail""}","{""ImportId"":""externalDataReference""}","{""ImportId"":""locationLatitude""}","{""ImportId"":""locationLongitude""}","{""ImportId"":""distributionChannel""}","{""ImportId"":""userLanguage""}","{""ImportId"":""QID1_1""}","{""ImportId"":""QID1_2""}","{""ImportId"":""QID1_3""}","{""ImportId"":""QID1_4""}","{""ImportId"":""QID1_5""}","{""ImportId"":""QID1_6""}","{""ImportId"":""QID1_7""}","{""ImportId"":""QID1_8""}","{""ImportId"":""QID1_9""}","{""ImportId"":""QID1_10""}","{""ImportId"":""QID3""}","{""ImportId"":""QID2_1""}","{""ImportId"":""QID2_2""}","{""ImportId"":""QID2_3""}","{""ImportId"":""QID2_4""}","{""ImportId"":""QID2_5""}","{""ImportId"":""QID2_6""}","{""ImportId"":""QID2_7""}","{""ImportId"":""QID2_8""}","{""ImportId"":""QID2_9""}","{""ImportId"":""QID2_10""}","{""ImportId"":""QID6""}","{""ImportId"":""QID6_DO""}","{""ImportId"":""QID7_1""}","{""ImportId"":""QID7_2""}","{""ImportId"":""QID7_3""}","{""ImportId"":""QID7_4""}","{""ImportId"":""QID7_5""}","{""ImportId"":""QID7_6""}","{""ImportId"":""QID7_7""}","{""ImportId"":""QID7_8""}","{""ImportId"":""QID7_9""}","{""ImportId"":""QID7_10""}","{""ImportId"":""QID7_11""}","{""ImportId"":""QID7_12""}","{""ImportId"":""QID7_13""}","{""ImportId"":""QID7_14""}","{""ImportId"":""QID7_15""}","{""ImportId"":""QID7_16""}","{""ImportId"":""QID7_17""}","{""ImportId"":""QID7_18""}","{""ImportId"":""QID7_19""}","{""ImportId"":""QID7_20""}","{""ImportId"":""QID8_1""}","{""ImportId"":""QID8_2""}","{""ImportId"":""QID8_3""}","{""ImportId"":""QID8_4""}","{""ImportId"":""QID8_5""}","{""ImportId"":""QID8_6""}","{""ImportId"":""QID8_7""}","{""ImportId"":""QID8_8""}","{""ImportId"":""QID8_9""}","{""ImportId"":""QID8_10""}","{""ImportId"":""QID8_11""}","{""ImportId"":""QID8_12""}","{""ImportId"":""QID8_13""}","{""ImportId"":""QID8_14""}","{""ImportId"":""QID8_15""}","{""ImportId"":""QID8_16""}","{""ImportId"":""QID8_17""}","{""ImportId"":""QID8_18""}","{""ImportId"":""QID8_19""}","{""ImportId"":""QID8_20""}","{""ImportId"":""QID135""}","{""ImportId"":""QID9_1""}","{""ImportId"":""QID9_2""}","{""ImportId"":""QID9_3""}","{""ImportId"":""QID9_4""}","{""ImportId"":""QID9_5""}","{""ImportId"":""QID9_6""}","{""ImportId"":""QID9_7""}","{""ImportId"":""QID9_8""}","{""ImportId"":""QID9_9""}","{""ImportId"":""QID9_10""}","{""ImportId"":""QID9_11""}","{""ImportId"":""QID9_12""}","{""ImportId"":""QID9_13""}","{""ImportId"":""QID9_14""}","{""ImportId"":""QID9_15""}","{""ImportId"":""QID9_16""}","{""ImportId"":""QID9_17""}","{""ImportId"":""QID9_18""}","{""ImportId"":""QID9_19""}","{""ImportId"":""QID10_1""}","{""ImportId"":""QID10_2""}","{""ImportId"":""QID10_3""}","{""ImportId"":""QID10_4""}","{""ImportId"":""QID10_5""}","{""ImportId"":""QID10_6""}","{""ImportId"":""QID10_7""}","{""ImportId"":""QID10_8""}","{""ImportId"":""QID10_9""}","{""ImportId"":""QID10_10""}","{""ImportId"":""QID10_11""}","{""ImportId"":""QID10_12""}","{""ImportId"":""QID10_13""}","{""ImportId"":""QID10_14""}","{""ImportId"":""QID10_15""}","{""ImportId"":""QID10_16""}","{""ImportId"":""QID10_17""}","{""ImportId"":""QID10_18""}","{""ImportId"":""QID11_1""}","{""ImportId"":""QID11_2""}","{""ImportId"":""QID11_3""}","{""ImportId"":""QID11_4""}","{""ImportId"":""QID11_5""}","{""ImportId"":""QID11_6""}","{""ImportId"":""QID11_7""}","{""ImportId"":""QID11_8""}","{""ImportId"":""QID11_9""}","{""ImportId"":""QID11_10""}","{""ImportId"":""QID11_11""}","{""ImportId"":""QID11_12""}","{""ImportId"":""QID11_13""}","{""ImportId"":""QID11_14""}","{""ImportId"":""QID11_15""}","{""ImportId"":""QID11_16""}","{""ImportId"":""QID11_17""}","{""ImportId"":""QID12_1""}","{""ImportId"":""QID12_2""}","{""ImportId"":""QID12_3""}","{""ImportId"":""QID12_4""}","{""ImportId"":""QID12_5""}","{""ImportId"":""QID12_6""}","{""ImportId"":""QID12_7""}","{""ImportId"":""QID12_8""}","{""ImportId"":""QID12_9""}","{""ImportId"":""QID12_10""}","{""ImportId"":""QID12_11""}","{""ImportId"":""QID12_12""}","{""ImportId"":""QID12_13""}","{""ImportId"":""QID12_14""}","{""ImportId"":""QID12_15""}","{""ImportId"":""QID12_16""}","{""ImportId"":""QID13_1""}","{""ImportId"":""QID13_2""}","{""ImportId"":""QID13_3""}","{""ImportId"":""QID13_4""}","{""ImportId"":""QID13_5""}","{""ImportId"":""QID13_6""}","{""ImportId"":""QID13_7""}","{""ImportId"":""QID13_8""}","{""ImportId"":""QID13_9""}","{""ImportId"":""QID13_10""}","{""ImportId"":""QID13_11""}","{""ImportId"":""QID13_12""}","{""ImportId"":""QID13_13""}","{""ImportId"":""QID13_14""}","{""ImportId"":""QID13_15""}","{""ImportId"":""QID14_1""}","{""ImportId"":""QID14_2""}","{""ImportId"":""QID14_3""}","{""ImportId"":""QID14_4""}","{""ImportId"":""QID14_5""}","{""ImportId"":""QID14_6""}","{""ImportId"":""QID14_7""}","{""ImportId"":""QID14_8""}","{""ImportId"":""QID14_9""}","{""ImportId"":""QID14_10""}","{""ImportId"":""QID14_11""}","{""ImportId"":""QID14_12""}","{""ImportId"":""QID14_13""}","{""ImportId"":""QID14_14""}","{""ImportId"":""QID15_1""}","{""ImportId"":""QID15_2""}","{""ImportId"":""QID15_3""}","{""ImportId"":""QID15_4""}","{""ImportId"":""QID15_5""}","{""ImportId"":""QID15_6""}","{""ImportId"":""QID15_7""}","{""ImportId"":""QID15_8""}","{""ImportId"":""QID15_9""}","{""ImportId"":""QID15_10""}","{""ImportId"":""QID15_11""}","{""ImportId"":""QID15_12""}","{""ImportId"":""QID15_13""}","{""ImportId"":""QID16_1""}","{""ImportId"":""QID16_2""}","{""ImportId"":""QID16_3""}","{""ImportId"":""QID16_4""}","{""ImportId"":""QID16_5""}","{""ImportId"":""QID16_6""}","{""ImportId"":""QID16_7""}","{""ImportId"":""QID16_8""}","{""ImportId"":""QID16_9""}","{""ImportId"":""QID16_10""}","{""ImportId"":""QID16_11""}","{""ImportId"":""QID16_12""}","{""ImportId"":""QID17_1""}","{""ImportId"":""QID17_2""}","{""ImportId"":""QID17_3""}","{""ImportId"":""QID17_4""}","{""ImportId"":""QID17_5""}","{""ImportId"":""QID17_6""}","{""ImportId"":""QID17_7""}","{""ImportId"":""QID17_8""}","{""ImportId"":""QID17_9""}","{""ImportId"":""QID17_10""}","{""ImportId"":""QID17_11""}","{""ImportId"":""QID18_1""}","{""ImportId"":""QID18_2""}","{""ImportId"":""QID18_3""}","{""ImportId"":""QID18_4""}","{""ImportId"":""QID18_5""}","{""ImportId"":""QID18_6""}","{""ImportId"":""QID18_7""}","{""ImportId"":""QID18_8""}","{""ImportId"":""QID18_9""}","{""ImportId"":""QID18_10""}","{""ImportId"":""QID19_1""}","{""ImportId"":""QID19_2""}","{""ImportId"":""QID19_3""}","{""ImportId"":""QID19_4""}","{""ImportId"":""QID19_5""}","{""ImportId"":""QID19_6""}","{""ImportId"":""QID19_7""}","{""ImportId"":""QID19_8""}","{""ImportId"":""QID19_9""}","{""ImportId"":""QID20_1""}","{""ImportId"":""QID20_2""}","{""ImportId"":""QID20_3""}","{""ImportId"":""QID20_4""}","{""ImportId"":""QID20_5""}","{""ImportId"":""QID20_6""}","{""ImportId"":""QID20_7""}","{""ImportId"":""QID20_8""}","{""ImportId"":""QID21_1""}","{""ImportId"":""QID21_2""}","{""ImportId"":""QID21_3""}","{""ImportId"":""QID21_4""}","{""ImportId"":""QID21_5""}","{""ImportId"":""QID21_6""}","{""ImportId"":""QID21_7""}","{""ImportId"":""QID22_1""}","{""ImportId"":""QID22_2""}","{""ImportId"":""QID22_3""}","{""ImportId"":""QID22_4""}","{""ImportId"":""QID22_5""}","{""ImportId"":""QID22_6""}","{""ImportId"":""QID23_1""}","{""ImportId"":""QID23_2""}","{""ImportId"":""QID23_3""}","{""ImportId"":""QID23_4""}","{""ImportId"":""QID23_5""}","{""ImportId"":""QID24_1""}","{""ImportId"":""QID24_2""}","{""ImportId"":""QID24_3""}","{""ImportId"":""QID24_4""}","{""ImportId"":""QID25_1""}","{""ImportId"":""QID25_2""}","{""ImportId"":""QID25_3""}","{""ImportId"":""QID26_1""}","{""ImportId"":""QID26_2""}","{""ImportId"":""QID27_1""}"
+6/22/2023 16:01,6/22/2023 16:02,Survey Preview,,100,60,TRUE,6/22/2023 16:02,R_1dE6NxQKnF5Gr6u,,,,,43.103,-89.5073,preview,EN,Tom,Som,Nidia,Ross,Trevor,Matt,,,,,"${q://QID1/ChoiceTextEntryValue/1},${q://QID1/ChoiceTextEntryValue/4},${q://QID1/ChoiceTextEntryValue/5}",Amy,Missy,Mindi,Jina,Sujin,,,,,,,${q://QID2/ChoiceTextEntryValue/4}|${q://QID2/ChoiceTextEntryValue/1}|${q://QID2/ChoiceTextEntryValue/3}|${q://QID1/ChoiceTextEntryValue/4}|${q://QID2/ChoiceTextEntryValue/5}|${q://QID1/ChoiceTextEntryValue/5},,,,Family Member,Family Member,,,,,,Family Member,,Family Member,Family Member,Family Member,,,,,,,,,Cisgender Man,Cisgender Man,,,,,,Cisgender Man,,Cisgender Man,Cisgender Man,,,,,,,"${q://QID49/ChoiceTextEntryValue/1},${q://QID49/ChoiceTextEntryValue/2},${q://QID49/ChoiceTextEntryValue/3}",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,${q://QID1/ChoiceTextEntryValue/4},,,,,,,,,${q://QID1/ChoiceTextEntryValue/4},,,,,,,,,,,,${q://QID1/ChoiceTextEntryValue/5},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,${q://QID2/ChoiceTextEntryValue/1},,,,,,,,,,,,,,,${q://QID2/ChoiceTextEntryValue/3},,,,,,,${q://QID2/ChoiceTextEntryValue/4},,,,,,,,,,,,,,,,,,,,
+6/22/2023 16:52,6/22/2023 16:54,Survey Preview,,100,164,TRUE,6/22/2023 16:54,R_1hAspgtzX7ZB6gH,,,,,43.103,-89.5073,preview,EN,Tom J,Som J,Nidia B,Ross B,Trevor M,Matt H,,,,,"${q://QID1/ChoiceTextEntryValue/1},${q://QID1/ChoiceTextEntryValue/5},${q://QID1/ChoiceTextEntryValue/6}",Jina L,SJ L,Jinhee H,HK J,Ari C,Sara G,,,,,,${q://QID1/ChoiceTextEntryValue/1}|${q://QID1/ChoiceTextEntryValue/2}|${q://QID1/ChoiceTextEntryValue/5}|${q://QID2/ChoiceTextEntryValue/2}|${q://QID1/ChoiceTextEntryValue/4}|${q://QID2/ChoiceTextEntryValue/6},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"${q://QID49/ChoiceTextEntryValue/1},${q://QID49/ChoiceTextEntryValue/5}",${q://QID1/ChoiceTextEntryValue/1},,${q://QID1/ChoiceTextEntryValue/1},${q://QID1/ChoiceTextEntryValue/1},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+7/10/2023 13:30,7/10/2023 13:32,Survey Preview,,100,101,TRUE,7/10/2023 13:32,R_3n1OXziPRx6Bmhr,,,,,43.103,-89.5073,preview,EN,Amy G,Amy Gr,Sarah M,Abby B,Sujin L,Jina L,,,,,"${q://QID1/ChoiceTextEntryValue/5},${q://QID1/ChoiceTextEntryValue/6}",Matt H,Tom T,Ryan T,Anna H,Niki G,Paul P,,,,,,${q://QID2/ChoiceTextEntryValue/2}|${q://QID1/ChoiceTextEntryValue/6}|${q://QID1/ChoiceTextEntryValue/4}|${q://QID2/ChoiceTextEntryValue/1}|${q://QID2/ChoiceTextEntryValue/3}|${q://QID1/ChoiceTextEntryValue/1},College Student,,,Friend,,College Student,,,,,"College Educator (Staff, faculty, etc.)",Co-worker,"Friend,College Educator (Staff, faculty, etc.),Spiritual Advisor (Priest, Imam, etc.)",,,,,,,,Cisgender Woman,,,Cisgender Man,,Cisgender Man,,,,,Transgender Woman,Transgender Woman,Cisgender Man,,,,,,,,${q://QID49/ChoiceTextEntryValue/2},,,${q://QID1/ChoiceTextEntryValue/1},,,,,,,${q://QID1/ChoiceTextEntryValue/1},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,${q://QID1/ChoiceTextEntryValue/4},,${q://QID1/ChoiceTextEntryValue/4},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,${q://QID2/ChoiceTextEntryValue/1},${q://QID2/ChoiceTextEntryValue/1},,,,,,,,${q://QID2/ChoiceTextEntryValue/2},,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
